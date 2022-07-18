@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  MainWeatherView.swift
 //  MyWeatherApp
 //
-//  Created by Mario Hernandez Corral on 15/7/22.
+//  Created by Mario Hernandez Corral on 18/7/22.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainWeatherView: View {
 	
 	@StateObject private var vm = WeatherViewModel()
 	@State private var searchedCity = "Salamanca"
@@ -44,8 +44,8 @@ struct ContentView: View {
 				.padding(.top, -20)
 				
 				HStack(spacing: 14) {
-					Label(vm.weatherModel.minTemperature, systemImage: "thermometer.sun.fill")
-					Label(vm.weatherModel.maxTemperature, systemImage: "thermometer.snowflake")
+					Label(vm.weatherModel.minTemperature, systemImage: "thermometer.snowflake")
+					Label(vm.weatherModel.maxTemperature, systemImage: "thermometer.sun.fill")
 				}
 				.symbolRenderingMode(.multicolor)
 				.foregroundColor(.white)
@@ -60,12 +60,14 @@ struct ContentView: View {
 						Image(systemName: "sunrise.fill")
 							.symbolRenderingMode(.multicolor)
 						Text(vm.weatherModel.sunrise, style: .time)
+							.padding(.top, 5)
 					}
 					
 					VStack {
 						Image(systemName: "sunset.fill")
 							.symbolRenderingMode(.multicolor)
 						Text(vm.weatherModel.sunset, style: .time)
+							.padding(.top, 5)
 					}
 				}
 				
@@ -77,11 +79,16 @@ struct ContentView: View {
 					.symbolRenderingMode(.multicolor)
 					.foregroundColor(.white)
 				
-				Picker("Choose a city", selection: $searchedCity) {
-					ForEach(vm.spainCities.spainCities, id: \.self) {
-						Text($0)
+				VStack {
+					Label("Choose a city", systemImage: "mappin.and.ellipse")
+					
+					Picker("Choose a city", selection: $searchedCity) {
+						ForEach(vm.spainCities.spainCities, id: \.self) {
+							Text($0)
+						}
 					}
 				}
+				.padding(.top, 20)
 				
 				Spacer()
 			}
@@ -99,7 +106,8 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+	static var previews: some View {
+		MainWeatherView()
+	}
 }
+

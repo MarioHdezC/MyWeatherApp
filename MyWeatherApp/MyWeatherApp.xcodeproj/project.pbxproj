@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AB4FF1902881E79E003E69C6 /* MyWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4FF18F2881E79E003E69C6 /* MyWeatherAppApp.swift */; };
-		AB4FF1922881E79E003E69C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4FF1912881E79E003E69C6 /* ContentView.swift */; };
 		AB4FF1942881E7A3003E69C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4FF1932881E7A3003E69C6 /* Assets.xcassets */; };
 		AB4FF1972881E7A3003E69C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4FF1962881E7A3003E69C6 /* Preview Assets.xcassets */; };
 		AB4FF19E2881E807003E69C6 /* WeatherResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4FF19D2881E807003E69C6 /* WeatherResponseDataModel.swift */; };
@@ -16,12 +15,12 @@
 		AB4FF1A328820A06003E69C6 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4FF1A228820A06003E69C6 /* WeatherModel.swift */; };
 		AB4FF1A528820ABF003E69C6 /* WeatherModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4FF1A428820ABF003E69C6 /* WeatherModelMapper.swift */; };
 		AB4FF1A7288212F1003E69C6 /* CitiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4FF1A6288212F1003E69C6 /* CitiesModel.swift */; };
+		AB4FF1AD28854AA3003E69C6 /* MainWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4FF1AC28854AA3003E69C6 /* MainWeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB4FF18C2881E79E003E69C6 /* MyWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4FF18F2881E79E003E69C6 /* MyWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWeatherAppApp.swift; sourceTree = "<group>"; };
-		AB4FF1912881E79E003E69C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB4FF1932881E7A3003E69C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB4FF1962881E7A3003E69C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB4FF19D2881E807003E69C6 /* WeatherResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseDataModel.swift; sourceTree = "<group>"; };
@@ -29,6 +28,7 @@
 		AB4FF1A228820A06003E69C6 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		AB4FF1A428820ABF003E69C6 /* WeatherModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModelMapper.swift; sourceTree = "<group>"; };
 		AB4FF1A6288212F1003E69C6 /* CitiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesModel.swift; sourceTree = "<group>"; };
+		AB4FF1AC28854AA3003E69C6 /* MainWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 		AB4FF1A828847794003E69C6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AB4FF1912881E79E003E69C6 /* ContentView.swift */,
+				AB4FF1AC28854AA3003E69C6 /* MainWeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB4FF1922881E79E003E69C6 /* ContentView.swift in Sources */,
+				AB4FF1AD28854AA3003E69C6 /* MainWeatherView.swift in Sources */,
 				AB4FF1A12881E9CC003E69C6 /* WeatherViewModel.swift in Sources */,
 				AB4FF1902881E79E003E69C6 /* MyWeatherAppApp.swift in Sources */,
 				AB4FF19E2881E807003E69C6 /* WeatherResponseDataModel.swift in Sources */,
